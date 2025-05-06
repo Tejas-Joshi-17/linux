@@ -1,0 +1,78 @@
+******************************************************* This is Linux Commands ****************************************************************
+
+1)    ls                       :-    List files and directories.
+2)    ls -l                    :-    displays files and directories with detailed information.
+3)    ls -a                    :-    shows all files and directories, including
+4)    ls -h                    :-    displays file sizes in a human-readable format.
+5)    ls -l -a                 :-    displays files and directories with detailed information  &  shows all files and directories, including.
+6)    ls -l -h                 :-     displays files and directories with detailed information  &  displays file sizes in a human-readable format.
+
+7)    cd                      :-    cd /path/to/directory    -   changes the current directory to the specified path.
+8)    pwd                     :-    displays the current working directory.
+9)    mkdir my_directory      :-   creates a new directory named “my_directory”.
+10)   mkdir "Linux Commands"  :-   Creates a new directory named "Linux Commands"
+
+11)   rm file.txt             :-   deletes the file named "file.txt"
+12)   rm -r my_directory      :-   deletes the directory "my_directory" recursively and its contents.
+13)   rm -f file.txt          :-    forcefully deletes the file "file.txt" without confirmation.
+
+16)   mv old_name.txt new_name.txt           :-  Rename the file "old_name.txt" to "new_name.txt"
+17)   mv file.txt destination                :-  Moves the file "file.txt" to specified destination.
+
+
+------------------------------------------------------------------------ Linux Commands ---------------------------------------------------------------------
+
+  A)  File & Directory Operation :-
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+
+      1) ls                      :-  List Files & Directories.
+      2) ls -l                   :-  Display Files & Directories with detailed information.
+      3) ls -a                   :-  Shows all Files & Directories including hidden Files.
+      4) ls -h                   :-  Display Files sizes in a human-readable format.
+      5) ls -lah                 :-  Shows All Files & Directories including hidden in human-readable format.
+
+
+      (-) Indicates File
+      (d) Indicates Directory
+
+      (File/Directory)  (File Link)  User|Group|Other  (Size)  (Last Modification Deatils)
+
+       -rw-rw-r--  1 tejas tejas  29M May 30 06:47 'Angular - Sahosoft Solutions.pptx'
+       drwxrwxr-x  9 tejas tejas 4.0K Jun 26 23:44  apache-tomcat-9.0.90
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  cd /path/to/directory         :-  Changes the current directory to the specified path.
+	  2)  cd ..                                     :-  Moves to backward directory.
+	  3)  pwd                                     :-  Displays the current working directory.
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  touch file.txt                         :-  Create an empty file if not present else update file timestamps.
+	  2)  touch Sample Text               :-  Create 2 Files "Sample" and "Text"
+	  3)  touch "Sample Text"            :-  Creates Single File named "Sample Text"
+	  4)  nano file.txt                          :-  Create File named 'file.txt'.
+	  5)  rm file.txt                             :-  Deletes the file named 'file.txt'.
+	  6)  rm -f file.txt                         :-  Forcefully deletes the file 'file.txt' wothout confirmation.
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  mkdir my_directory            :-  Creates a new directory named "my_directory".
+	  2)  rmdir my_directory            :-  Delete directory named "my_directory".
+	  3)  rm -r my_directory             :-  Deletes the directory "my_directory" and its contents.
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  cp file.txt destination                :-  Copies the file "file.txt" to the specified destination
+	  2)  cp -r directory destination       :-  Copies the directory "directory" & its contents to the destination
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  mv file.txt new_name.txt         :-  Rename the file "file.txt" to "new_name.txt"
+	  2)  mv file.txt directory                  :-  Moves the file "file.txt" to the specified directory
+
+      -------------------------------------------------------------------------------------------------------------------------------------------------
+	  1)  cat file.txt                 	           :-  Displays the contents of the file "file.txt"
+	  2)  head file.txt                                :-  displays the first 10 lines of the file "file.txt"
+	  3)  head -n 5 file.txt                        :-  displays the first 5 lines of the file "file.txt"
+	  4)  tail file.txt                                  :-  displays the last 10 lines of the file "file.txt"
+	  5)  tail -n 5 file.txt                          :-  displays the last 5 lines of the file "file.txt"
+
+
+
