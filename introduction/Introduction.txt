@@ -1,0 +1,79 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Definition :-  
+
+  1) Linux is an open-source Operating System based on Unix Operating System.
+  2) It is known for its security, flexibility.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+History :-  
+  
+  1) Created by Linus Torvalds in 1991.
+  2) The name "Linux" comes from Linus + Unix.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is Unix :-  
+
+  Unix is a powerful, multiuser, multitasking OS originally developed in the 1970s at AT&T's Bell Labs,
+  which serves as the foundation for many modern operating system.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Linux VS Unix :-  
+
+  1) Unix is licensed
+  2) Linux is Open Sourced
+  3) Linux is inspired By Unix and is designed to be Unix-like. It follows many of the same principles and 
+     standards, making it compatible with Unix software and Commands.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Important :- 
+
+  1) Linux is not an OS.
+  2) Linux is an open-source kernel.
+  3) A Kernel is the core part of an operating system, managing system resources and communication between
+     hardware and software.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Linux Distributions (Distros) :-  
+
+  An Operating System made from a software collection, which includes the Linux Kernel and often a package 
+  management system.
+
+  Example :-  Ubuntu, CentOs, Red Hat, KaliOS, etc.
+
+                     Linux Kernel (Open Sourced) 
+                           [Engine]   
+                               |            
+                ---------------|---------------            
+                |              |              |            
+                |              |              |            
+              Ubuntu         CentOS         Red Hat 
+              [Car]           [Car]          [Car]
+            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Key Features of Linux Based OS (Distros) :- 
+
+  1) Open Sourced  :-  Source Code is freely avaliable and can be modified.
+  2) Multi-User    :-  Multiple users can access system resources simultaneously.
+  3) Multi-Tasking :-  Can run multiple tasks simultaneously.
+  4) Security      :-  Strong Security features and regular updates.
+  5) Portability   :-  Can run on various hardware platforms.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Market Demand :-  
+
+  1) Job Roles :-  
+      Linux skills are in demand for roles such as System Administrators, DevOps ENgineers, Cloud Architects.
+      Software Developers, Network Engineers, and Cybersecurity professionals.
+  2) Industry Adoption :- 
+      Many companies, from tech giants like Google, Facebook, and Amazon to finicial institutions and 
+      healthcare provides, rely on Linux for their IT infrastructure.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
