@@ -1,3 +1,5 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 SCP (Scecure Copy Protocol) :- 
 
   1] It is a command-line tool used for securly transfering files between a local and a remote host, or between two remote hosts,
@@ -7,3 +9,12 @@ SCP (Scecure Copy Protocol) :-
  
                   [username]                :-  Remote Server username.
                   [hostname or IP Address]  :-  Server's hostname of IP address.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Real-Time Example :-  
+
+1] sshpass -p <serverPassword> scp -rp <localFile> ssh [username]@[hostname or IP Address]:<hostLocation> 
+-> sshpass -p Srvt@2025Srvt@2025 scp -rp ./modules/simulator-service/build/install/simulator-service/simulator-service-1.0.1.jar npcisrvt@10.121.76.229:/home/npcisrvt/PRATI_NPCI/upi_simulator
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -60,3 +60,13 @@ Install SSH Component on Linux
 2] Restart Service                 :-     sudo systemctl restart ssh 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Real-Time Example :- 
+
+1] sshpass -p <serverPassword> ssh [username]@[hostname or IP Address] 
+-> sshpass -p Srvt#2025Srvt#2025  ssh upiapp@10.121.76.60 
+
+2] sshpass -p <serverPassword> ssh [username]@[hostname or IP Address] <operationDoneInServer> 
+-> sshpass -p Srvt@2025Srvt@2025  ssh npcisrvt@10.121.76.229 ./startstop.sh
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
