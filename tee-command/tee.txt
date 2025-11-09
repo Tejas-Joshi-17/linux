@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------------------------------------------------------
+
+tee command :-  
+
+  - 'tee' reads standard input and output it both to stdOutput and to a file.
+  - We can see the information going through pipeline.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+1.1) Without 'tee' command :-          ls ../piping/exercise/ > withoutTeeCommand.txt
+Output :-   
+
+1.2) Without 'tee' command :-          ls ../piping/exercise/ > withoutTeeCommand.txt | wc -l
+Output :-  0
+
+2.1) With 'tee' command :-             ls ../piping/exercise/ | tee withTeeCommand.txt
+Output :-       countries.txt
+                exercise-4.txt
+                names.txt
+
+2.2) With 'tee' command :-             ls ../piping/exercise/ | tee withTeeCommand.txt | wc -l
+Output :-  3
+
+---------------------------------------------------------------------------------------------------------------------------------

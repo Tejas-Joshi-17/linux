@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is a Pipe :-  
+
+  - Pipes are used to redirect a stream from one program to another porgram.
+  - The output of one command redirect it to the input of another.
+
+Syntax :-         
+
+  - we use '|' sumbol to separate two commands.
+  - Output of first command passed/redirected to second command.
+      command1 | command2 | command3
+    output of commond1 -> input of command2
+    output of commond2 -> input of command3
+
+  Example :-   ps -ef | grep http
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercise - 1)  Find no. of files present in a directory.
+Solution :-    ls -1  :-   list of files
+               ls -1 | wc -l  
+
+Exercise - 2)  Combine both files content using cat and sort it.
+Solution :-    cat ./exercise/names.txt ./exercise/countries.txt | sort
+
+Exercise - 3)  Find Unique data from a file.
+Solution :-    cat ./exercise/names.txt | sort | uniq
+
+Exercise - 4)  How to see only 30-37th line in a file of 100 lines
+Solution :-    cat ./exercise/exercise-4.txt | head -37 | tail -8
+
+-------------------------------------------------------------------------------------------------------------------------------------------------

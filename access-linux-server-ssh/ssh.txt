@@ -69,4 +69,7 @@ Real-Time Example :-
 2] sshpass -p <serverPassword> ssh [username]@[hostname or IP Address] <operationDoneInServer> 
 -> sshpass -p Srvt@2025Srvt@2025  ssh npcisrvt@10.121.76.229 ./startstop.sh
 
+3] Login & Run some commands :-
+    sshpass -p password ssh root@localhost -p 2222 ./root/run.sh
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

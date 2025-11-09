@@ -1,0 +1,109 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🧭 What is Nano Editor?
+
+Nano is a simple, command-line text editor that’s very easy to use — especially for beginners.
+It’s often pre-installed on most Linux distributions and is a more user-friendly alternative to Vim or Emacs.
+
+Unlike Vim (which uses modes), Nano works like a normal text editor — you can start typing immediately after opening a file.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Starting Nano :-  
+
+  1) To open a file in Nano, use :-   nano filename
+
+  Note :-                  
+    - a) If the file exists, it will open it.
+    - b) If the file does not exist, it will create a new one.
+
+  Example :-    nano myfile.txt
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Nano Interface Overview :-  
+
+When you open Nano, you’ll see :-
+
+GNU nano 6.2                              myfile.txt
+---------------------------------------------------------
+| Your text appears here...               |
+|                                         |
+---------------------------------------------------------
+^G Help  ^O Write Out  ^W Where Is  ^K Cut  ^T Execute  ^C Location
+^X Exit  ^R Read File  ^\ Replace   ^U Paste ^J Justify  ^_ Go To Line
+
+  - The top line shows the version and file name.
+  - The bottom two lines show the shortcut keys (commands).
+  - The ^ symbol means the Ctrl key (e.g., ^X means Ctrl + X).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Essential Nano Commands :-  
+
++--------------------------+-----------------+-------------------------------------------------------+
+| Command                  | Key Combination | Description                                           |
++--------------------------+-----------------+-------------------------------------------------------+
+| Help                     | `Ctrl + G`      | Display help text                                     |
+| Save file                | `Ctrl + O`      | Write changes to file (then press `Enter` to confirm) |
+| Exit Nano                | `Ctrl + X`      | Exit (it asks to save changes if needed)              |
+| Cut text                 | `Ctrl + K`      | Cut current line (acts like “cut”)                    |
+| Paste text               | `Ctrl + U`      | Paste text                                            |
+| Mark text                | `Ctrl + ^`      | Start selecting text                                  |
+| Delete character         | `Ctrl + D`      | Delete character under cursor                         |
+| Undo                     | `Alt + U`       | Undo last action                                      |
+| Redo                     | `Alt + E`       | Redo last undone action                               |
+| Search                   | `Ctrl + W`      | Search for text                                       |
+| Search and Replace       | `Ctrl + \`      | Search and replace text                               |
+| Go to line number        | `Ctrl + _`      | Jump to specific line and column                      |
+| Show cursor position     | `Ctrl + C`      | Show current line and column number                   |
+| Justify paragraph        | `Ctrl + J`      | Format text neatly                                    |
+| Open another file        | `Ctrl + R`      | Insert another file into the current one              |
++--------------------------+-----------------+-------------------------------------------------------+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+File Operation Example :-  
+
+  1) Create or Edit a file :-     nano notes.txt
+  2) Save your file :-            Press `Ctrl + O`
+                                  Press `Enter` to confirm filename
+  3) Exit Nano :-                 Press `Ctrl + X`
+                                  If changes weren’t saved, Nano will ask :-  
+                                      Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?
+                                      Press :- 
+                                        - a) Y        :- Yes (save)
+                                        - b) N        :- No (don’t save)
+                                        - c) Ctrl + C :- Cancel
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Search and Replace Example :-  
+
+  1) Press Ctrl + W :- Type the word to search.
+  2) To replace :-
+      - a) Press Ctrl + \
+      - b) Enter the word to find → Enter
+      - c) Enter the replacement → Enter
+      - d) Press Y for each replacement or A to replace all.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+⚡ Shortcut Summary :-  
+
+  +------------+------------+
+  | Action     | Shortcut   |
+  +------------+------------+
+  | Save file  | `Ctrl + O` |
+  | Exit       | `Ctrl + X` |
+  | Cut        | `Ctrl + K` |
+  | Paste      | `Ctrl + U` |
+  | Undo       | `Alt + U`  |
+  | Redo       | `Alt + E`  |
+  | Search     | `Ctrl + W` |
+  | Replace    | `Ctrl + \` |
+  | Go to line | `Ctrl + _` |
+  | Help       | `Ctrl + G` |
+  +------------+------------+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------

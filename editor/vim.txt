@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🧭 What is Vim?
+
+Vim (Vi IMproved) is a powerful text editor used mainly in Unix/Linux systems (but also available on Windows and macOS).
+It’s an advanced version of the classic vi editor, offering features like syntax highlighting, undo/redo, macros, and plugins.
+
+Vim is keyboard-based — instead of menus or buttons, you control everything with commands.
+It’s fast, efficient, and highly customizable — perfect for programmers and system administrators.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Modes in Vim :-
+
+Vim has different modes — understanding them is the key to using Vim effectively:
+
+  +------------------+--------------------------------------------+---------------------------------------------------+
+  | Mode             | Description                                | How to Enter                                      |
+  +------------------+--------------------------------------------+---------------------------------------------------+
+  | Normal Mode      | Default mode for navigation and commands   | Press `Esc`                                       |
+  | Insert Mode      | Used for typing text                       | Press `i`, `a`, or `o`                            |
+  | Visual Mode      | Used for selecting text                    | Press `v` (char), `V` (line), or `Ctrl+v` (block) |
+  | Command Mode     | Used for saving, quitting, searching, etc. | Press `:` from Normal mode                        |
+  +------------------+--------------------------------------------+---------------------------------------------------+
+
+Note :- When you first open Vim, you’re in Normal mode.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Starting Vim :-  
+
+commands :- vim filename
+If the file exists, it opens it.
+If not, it creates a new file with that name.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Example Vim Workflow :- 
+
+  1) vim hello.c        # open a file
+  2) i                  # enter insert mode
+  3) (type your code)
+  4) Esc                # return to normal mode
+  5) :w                 # save
+  6) :q                 # quit
+  7) :wq                # save + quit
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Basic Insert Commands :-  
+
+  +---------+--------------------------------------------+
+  | Command | Action                                     |
+  +---------+--------------------------------------------+
+  | i       | Insert text before the cursor              |
+  | a       | Insert text after the cursor               |
+  | o       | Open a new line below and start inserting  |
+  | O       | Open a new line above and start inserting  |
+  | Esc     | Exit insert mode and return to normal mode |
+  +---------+--------------------------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Navigation (Movement) Commands :-  
+
+  +---------+--------------------------+
+  | Command | Action                   |
+  +---------+--------------------------+
+  | h       | Move left                |
+  | j       | Move down                |
+  | k       | Move up                  |
+  | l       | Move right               |
+  | 0       | Move to start of line    |
+  | $       | Move to end of line      |
+  | w       | Jump to next word        |
+  | b       | Jump to previous word    |
+  | gg      | Go to first line of file |
+  | G       | Go to last line of file  |
+  | :n      | Go to line number *n*    |
+  +---------+--------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) Editing Commands :-  
+
+  +----------+---------------------------+
+  | Command  | Action                    |
+  +----------+---------------------------+
+  | x        | Delete a single character |
+  | dd       | Delete current line       |
+  | yy       | Copy (yank) current line  |
+  | p        | Paste below cursor        |
+  | P        | Paste above cursor        |
+  | u        | Undo last change          |
+  | Ctrl+r   | Redo undone change        |
+  | cw       | Change current word       |
+  | cc       | Change entire line        |
+  +----------+---------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) Search and Replace
+
+  +------------------+-------------------------------------+
+  | Command          | Action                              |
+  +------------------+-------------------------------------+
+  | /word            | Search for “word” (forward)         |
+  | ?word            | Search for “word” (backward)        |
+  | n                | Repeat search in same direction     |
+  | N                | Repeat search in opposite direction |
+  | :%s/old/new/g    | Replace all “old” with “new”        |
+  | :%s/old/new/gc   | Replace all with confirmation       |
+  +------------------+-------------------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5) File Commands :-  
+
+  +---------------+----------------------------------+
+  | Command       | Action                           |
+  +---------------+----------------------------------+
+  | :w            | Save file                        |
+  | :q            | Quit                             |
+  | :q!           | Quit without saving              |
+  | :wq or :x     | Save and quit                    |
+  | :e filename   | Open another file                |
+  | :r filename   | Insert contents of another file  |
+  | :!command     | Run shell command (e.g., `:!ls`) |
+  +---------------+----------------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6) Visual Mode Commands :-  
+
+  +----------+-------------------------------+
+  | Command  | Action                        |
+  +----------+-------------------------------+
+  | v        | Start visual mode (character) |
+  | V        | Start visual line mode        |
+  | Ctrl+v   | Start block visual mode       |
+  | y        | Copy selection                |
+  | d        | Delete selection              |
+  | >        | Indent selection              |
+  | <        | Unindent selection            |
+  +----------+-------------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7) Useful Settings :-  
+
+  +-------------------+-----------------------------+
+  | Command           | Action                      |
+  +-------------------+-----------------------------+
+  | :set number       | Show line numbers           |
+  | :set nonumber     | Hide line numbers           |
+  | :syntax on        | Enable syntax highlighting  |
+  | :set autoindent   | Enable auto-indentation     |
+  | :set ignorecase   | Ignore case while searching |
+  +-------------------+-----------------------------+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Summary :- 
+
+  Modes     :-  Normal, Insert, Visual, Command
+  Main keys :-
+      1) i         :- insert mode
+      2) Esc       :- normal mode
+      3) :w        :- save
+      4) :q        :- quit
+      5) dd, yy, p :- delete, copy, paste
+      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------

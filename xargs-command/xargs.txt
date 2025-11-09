@@ -1,0 +1,27 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+xargs :-  
+
+  It convert the stdInput into command line argument.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Command :-      ls piping/exercise/ | echo  
+Output :- 
+
+Command :-      ls piping/exercise/ | echo "Hi .. " 
+Output :-   Hi ..
+
+Command :-      ls piping/exercise/ | xargs echo "Hi .. "  
+Output :-   Hi .. countries.txt exercise-4.txt names.txt
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Exercise :-  Take/Read the name from fileNames.txt and create those no. of files in the present directory
+Solution :-     cat fileNames.txt | touch 
+                touch: missing file operand
+                Try 'touch --help' for more information.
+
+                cat fileNames.txt | xargs touch
+
+--------------------------------------------------------------------------------------------------------------------------------------------
