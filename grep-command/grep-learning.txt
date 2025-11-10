@@ -1,0 +1,20 @@
+The quick brown fox jumps over the lazy dog.
+Today is a bright sunny day with clear skies.
+Grep is a powerful command-line utility in Linux.
+Apples and oranges are both delicious fruits.
+The penguin prefers cold weather and icy seas.
+Learning bash scripting can improve automation.
+Error: file not found in the specified directory.
+The rain in Spain stays mainly in the plain.
+Running 'grep -i linux sample.txt' finds matches ignoring case.
+Always remember to escape special characters in regex.
+Dogs are loyal animals, unlike some cats.
+Success requires patience, practice, and persistence.
+grep "Error" sample.txt will show lines containing the word Error.
+The blue whale is the largest animal on Earth.
+Many developers use grep to search through source code.
+WARNING: Disk space running low on /dev/sda1.
+She sells seashells by the seashore.
+grep -v can be used to exclude certain patterns.
+A watched pot never boils, but a grepped file always reveals.
+Thank you for trying out grep with this sample text.

@@ -1,0 +1,121 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+GREP Command :-  
+
+  - a) GREP = Global Regular Expression Print.
+  - b) grep command search for a particular string/keyword form a file and print lines matching a pattern.
+  - c) It check line by and print lines matching given pattern.
+  - d) We can use grep command anywhere like with files, searching for file, directories, etc.
+
+syntax :-   grep [OPTION].. Pattern [File]..
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) To ignore the upper-case and lower-case while searching
+Solution :-           grep -i "keyword" file 
+
+Example - a) grep "the" rep-command/grep-learning.txt  
+Output :-      
+The quick brown fox jumps over the lazy dog.
+The penguin prefers cold weather and icy seas.
+Error: file not found in the specified directory.
+The rain in Spain stays mainly in the plain.
+grep "Error" sample.txt will show lines containing the word Error.
+The blue whale is the largest animal on Earth.
+She sells seashells by the seashore.
+
+Example - b) grep "THE" grep-command/grep-learning.txt 
+Output :-   
+
+Example - c) grep "THE" grep-command/grep-learning.txt 
+Output :- 
+The quick brown fox jumps over the lazy dog.
+The penguin prefers cold weather and icy seas.
+Error: file not found in the specified directory.
+The rain in Spain stays mainly in the plain.
+grep "Error" sample.txt will show lines containing the word Error.
+The blue whale is the largest animal on Earth.
+She sells seashells by the seashore.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) To Search Everything except given pattern/keyword
+Solution :-        grep -v "keyword" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) To print how many times (count) given keyword present in file 
+Solution :-        grep -c "keyword" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) To Search for exact match of given keyword in a file 
+Solution :-        grep -w "keyword" file
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+5) To Print the line no. of matches of given keyword in a file
+Solution :-       grep -n "keyword" file
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+6) To Search a given keyword in multiple files
+Solution :-       grep "keyword" file1 file2 ...
+Note :-           By default result of multiple files shows file name in output
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+7) To Suppress file names while search a given keyword in multiple files
+Solution :-      grep -h "keyword" file1 file2 ...
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+8) To Search multiple keywords in a file
+Solution :-      grep -e "keyword1" -e "keyword2" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+9) To Search multiple keywords in multiple files
+Solution :-      grep -e "keyword1" -e "keyword2" file1 file2 ...
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+10) To only print file names which matches given keyword
+Solution :-      grep -l "keyword" file1 file2 ...
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+11) To get the keywords/pattern from a file and match with a another file
+Solution :-      grep -f keyword.txt file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+12) To print the matching line which start with given keyword
+Solution :-      grep "^keyword" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+13) To print the matching line which end with given keyword
+Solution :-      grep "keyword$" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+14) Suppose we have 100 files in a directory (dirA) and we need to search a keyword in all the files
+Solution :-      grep -R "keyword" dirA/
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+15) We can use egrep command for the multiple keywords search 
+Solution :-      egrep "key1|key2|key3" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+16) If you just wanna search but don't want to print on terminal 
+Solution :-      grep -q "keyword" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+17) If you want to suppress error message
+Solution :-      grep -s "keyword" file 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
