@@ -1,0 +1,168 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+What is File System :- 
+
+  Operating System store and manage data on disk or partitions using a structure called Filesystem.
+  FileSystem includes files, directories and it's related permissions.
+  It stores data in hierarchy of directories and files.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+                                                        root directory
+                                                              /     
+                                                              |
+                                                              |
+    +-------+-------+---------+---------+-------+---------+---+---+-------+---------+-------+-------+-------+---------+-------+
+    |       |       |         |         |       |         |       |       |         |       |       |       |         |       |  
+
+  /bin/   /opt/   /boot/    /root/    /dev/   /sbin/    /etc/   /srv/   /home/    /tmp/   /lib/   /usr/   /media/   /var/   /mnt/                                                    
+                                                                                                    |                 |
+                                                                                                    |                 |
+                                                                    +-------------------------------+                 |
+                                                                    |                                                 |
+                                                                    |                              +------------------+
+                                                                    |                              |
+                                                    +--------+------+-+---------+     +---------+--------+--------+
+                                                    |        |        |         |     |         |        |        |
+                                                  /bin/  /include/   /lib/   /sbin/  /cache/  /log/   /spool/   /tmp/
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+1) File Extensions in Linux :-  
+
+  - a) Unlike Windows, Linux doesn’t depend on file extensions to understand a file type.
+        Example :-        script.sh & script
+                          both behave the same
+
+  - b) Extensions are only for convenience 
+       You may see :- 
+        - .sh → shell script
+        - .txt → text
+        - .conf → config
+        - .log → logs
+        - .service → systemd service
+        - .tar, .gz, .zip → compressed file
+      But Linux does not depend on them. You can even rename a file :- 
+        mv file.txt file.abc
+      It is still a text file.
+
+  - c) How Linux detects file type :- 
+        Using magic numbers (binary signatures), not extensions:
+        Example :-         file filename
+                           file image.png
+                           image.png :- PNG image data
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2) Case Sensitivity in Linux FileSystem :-  
+
+  - a) Linux filesystems such as ext4, xfs, btrfs are fully case-sensitive.
+
+    - file.txt
+      File.txt
+      FILE.txt
+      are three different files.
+      Example :-  touch file.txt File.txt FILE.txt 
+                  ls 
+                  file.txt File.txt FILE.txt 
+
+  - b) Paths are also case-sensitive :- 
+
+    - /home/tejas
+      is not the same as :- 
+      /home/Tejas
+
+      Example :-        cd Documents   ❌
+                        cd documents   ✔️
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+What is inode :- 
+
+  - An inode in Linux is a data structure that stores metadata about a file or directory.
+  - The filesystem uses the inode number to locate the inode, which then contains pointers to the data blocks where the actual
+    file data is stored.
+
+  Example :-   ls -li 
+              tejas-joshi@tejas-joshi-HP-Laptop-15s-fr5xxx:~/Documents/GitHub/skill/linux/file-stystem$ ls -li
+              total 8
+              3153352 -rw-rw-r-- 1 tejas-joshi tejas-joshi 4366 Nov 13 22:27 FileSystem.txt
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+FileSystem Structure :-  
+
+  1) / (root) Directory :- 
+
+    The Linux fileSystem starts at the root directory, denoted by a single slash (/), 
+    from which all other files and directories branch out.
+
+                                                        root directory
+                                                              /     
+                                                              |
+                                                              |
+    +-------+-------+---------+---------+-------+---------+---+---+-------+---------+-------+-------+-------+---------+-------+
+    |       |       |         |         |       |         |       |       |         |       |       |       |         |       |  
+
+  /bin/   /opt/   /boot/    /root/    /dev/   /sbin/    /etc/   /srv/   /home/    /tmp/   /lib/   /usr/   /media/   /var/   /mnt/                                                    
+                                                                                                    |                 |
+                                                                                                    |                 |
+                                                                    +-------------------------------+                 |
+                                                                    |                                                 |
+                                                                    |                              +------------------+
+                                                                    |                              |
+                                                    +--------+------+-+---------+     +---------+--------+--------+
+                                                    |        |        |         |     |         |        |        |
+                                                  /bin/  /include/   /lib/   /sbin/  /cache/  /log/   /spool/   /tmp/
+
+
+  a) /bin :-      Contains essential user binaries (executables), such as common commands like ls, cp, pwd, etc.
+  b) /etc :-      Contains System-wide configuration files. like User, Network, Services, System Apps
+                  Examples: /etc/passwd, /etc/ssh/sshd_config.
+  c) /home :-     Contains the personal directories of all users.
+
+      /home
+      ├── lost+found
+      ├── sudouser
+      └── sarvatra.in
+            └── tejas.joshi 
+
+    +-------------------------------+---------------------------------------------------------------------------------------+
+    |  Directory                    |	  Description                                                                         | 
+    +-------------------------------+---------------------------------------------------------------------------------------+
+    | /home/lost+found	            |  Like the root one, used for recovering lost files in this partition.                 |
+    | /home/sudouser	              |  Home directory for the user sudouser.                                                |
+    | /home/sarvatra.in/tejas.joshi	|  This represents a nested home structure — maybe an organization domain               |
+    |                               |  (sarvatra.in) with a user (tejas.joshi) inside.                                      |
+    |                               |  → Typically, /home/tejas.joshi would be the user’s home, but this structure is fine  |
+    |                               |    if you’re organizing by company/domain.                                            |
+    +-------------------------------+---------------------------------------------------------------------------------------+
+
+    tejas-joshi@tejas-joshi-HP-Laptop-15s-fr5xxx:~/Documents/GitHub/skill/linux$ cd /home
+    tejas-joshi@tejas-joshi-HP-Laptop-15s-fr5xxx:/home$ ls
+    tejas-joshi
+
+  d) /root :-          Home directory for the root (admin) user.
+  e) /var :-           Contains variable data — logs, mail, cache, databases (e.g., /var/log, /var/lib/mysql).
+  f) /boot :-          Holds files needed for system boot-up, including the Linux kernel, an initial RAM disk
+                       image, bootloader configuration (like GRUB).
+  g) /dev :-           This directory contains device files which represent and provide access to hardware devices
+                       such as hard drives, sound devices, etc.
+  h) /lib, /lin64 :-   These directories contain essential shared libraries and kernel modules that are needed 
+                       to boot the system and run the commands in the root filesystem.
+                       The /lib64 directory exists on system that support 64-bit applications
+  i) /media :-         This is the mount point for removable media such as USB drives, CD-ROMs, etc.
+                       When these devices are mounted, typically, directories corresponding to their mount points are created within /media.
+  j) /mnt :-           Used for temporarily mounting file systems (e.g., mounting another partition or network drive manually).
+  k) /opt :-           Used for optional software (like third-party apps installed manually).
+  l) /proc :-          A virtual filesystem giving access to system and process info (e.g., /proc/cpuinfo, /proc/meminfo). 
+                       No real files here — all are generated dynamically.
+  m) /run :-           Stores runtime data — like process IDs, sockets, and system info that exist only while the system is running.
+  n) /usr :-           Contains user applications and utilities (binaries, docs, libraries). Example: /usr/bin, /usr/lib.
+      |
+      |----> /bin/        :-     Applications & commands for all users
+      |----> /include/    :-     Header files for programming
+      |----> /lib/        :-     Libraries for software in /usr/bin
+      |----> /sbin/       :-     System admin commands (root)
+
+-----------------------------------------------------------------------------------------------------------------------------------------

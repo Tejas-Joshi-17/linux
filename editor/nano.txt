@@ -36,6 +36,7 @@ GNU nano 6.2                              myfile.txt
   - The top line shows the version and file name.
   - The bottom two lines show the shortcut keys (commands).
   - The ^ symbol means the Ctrl key (e.g., ^X means Ctrl + X).
+  - The M symbol means the Alt key (e.g., M-6 means Alt + 6 (function key) )
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
