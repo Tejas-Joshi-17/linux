@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) How to check permissions of a File :-         ls -ltr 
+
+Example :-     
+               ls -ltr
+            -> total 12
+            -> -rw-r--r-- 1 tejas.joshi@sarvatra.in domain users@sarvatra.in 4111 Aug 10 18:54 ssh.txt
+            -> drwxr-xr-x 2 tejas.joshi@sarvatra.in domain users@sarvatra.in 4096 Nov 14 16:38 remote-server
+
+    File Type :-    
+        1) -  :-  File 
+        2) d  :-  Directory
+
+Permissions :-  
+
+1) r :- means that the file is readable
+2) w :- means that the file is writable
+3) x :- means that the file is executable (you can run it as a program)
+3) - :- means 'nothing' (more specifically, the permission for that slot in the set has not been granted)
