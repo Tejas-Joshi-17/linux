@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+How to Create a User :- 
+
+Login as root user 
+
+1) useradd <user_name>
+2) useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name>
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+How to Delete a User :- 
+
+Login as root user 
+
+1) userdel <name_of_user>
+2) userdel -r <name_of_user>  (Will remove home directory)
+3) userdel -f <name_of_user>  (force delete even if the user is logged in)
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+How to modify a user :-  
+
+1) To add user to a new group, but default group will remain same :- 
+      usermod -G <group-name> <user-name>
+
+2) To Change the default group of user :- 
+      usermod -g <group-name> <user-name>
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+How to Change Password of User :- 
+
+1) passwd <user-name>
