@@ -10,6 +10,9 @@ SCP (Scecure Copy Protocol) :-
                   [username]                :-  Remote Server username.
                   [hostname or IP Address]  :-  Server's hostname of IP address.
 
+                  scp username@server_ip:/path/to/remote/file /path/to/local/
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Real-Time Example :-  
